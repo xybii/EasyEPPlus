@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net45;netstandard2.0;netstandard2.1;net5.0</TargetFrameworks>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Version>0.0.1</Version>
+		<PackageTags>EPPlus, Excel</PackageTags>
+		<PackageProjectUrl>https://github.com/xybii/EasyEPPlus</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/xybii/EasyEPPlus</RepositoryUrl>
+		<Description>EPPlus extension</Description>
+	</PropertyGroup>
+
+	<ItemGroup Condition=" '$(TargetFramework)' == 'net45'">
+		<PackageReference Include="EPPlus" Version="5.7.0" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+		<PackageReference Include="EPPlus" Version="5.7.0" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
+		<PackageReference Include="EPPlus" Version="5.7.0" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net5.0'">
+		<PackageReference Include="EPPlus" Version="5.7.0" />
+	</ItemGroup>
+
+</Project>
